@@ -1,0 +1,14 @@
+<div #chartContainer></div>
+
+<!-- <div #detailsChartContainer></div> -->
+<div *ngIf="selectedSector1">
+  <app-chart-detail [dataChart]="selectedSector" [index]="selectedSector1"></app-chart-detail>
+</div>
+
+<!-- <h2>My Heroes</h2>
+<ul>
+  <li *ngFor='let hero of heroes' (click)='onSelect(hero)'>
+    <span>{{hero.id}}</span> {{hero.name}}
+  </li>
+</ul>
+<app-chart-detail [data]="selectedHero"></app-chart-detail> -->
